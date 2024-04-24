@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    list-style-type: none; 
+    
+}
+
+header{
+    text-align: center;
+    background-color: #6b0f1a;
+    color: white;
+}
+
+h1{
+    padding: 1rem;
+}
+
+nav{
+    padding: 1rem;
+    background-color: #595959;
+}
+.menu-father{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-son{
+    margin: 0 10px;
+    padding: 0.5 rem;
+}

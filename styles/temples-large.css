@@ -11,3 +11,15 @@ a {
     list-style-type: none;
     font-family: montserrat; 
 }
+
+@media (min-width: 740px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+}

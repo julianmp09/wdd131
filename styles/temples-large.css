@@ -22,4 +22,12 @@ a {
 		justify-content: flex-end;
 		flex-direction: row;
 	}
+
+    nav a {
+        display: block;
+    }
+
+    #menu{
+        display: none;
+    }
 }

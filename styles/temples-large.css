@@ -30,4 +30,8 @@ a {
     #menu{
         display: none;
     }
+
+    footer{
+        height: 100px;
+    }
 }

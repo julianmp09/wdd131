@@ -46,7 +46,7 @@ nav {
 }
 
 nav a {
-	display: block;
+	display: none;
 	color: #fff;
 	text-align: center;
 	padding: 1rem;
@@ -57,8 +57,29 @@ nav a:hover {
 	text-decoration: underline double;
 }
 
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
 
+#menu::before {
+	content: "☰";
+}
 
+#menu.open::before {
+	content: "X";
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
 
 /* Main style */
 main {
@@ -91,7 +112,7 @@ figure figcaption {
 /* Footer style */
 footer{
 	padding: 1.5rem;
-    height: 100px;
+    height: 150px;
     background-color:  #36454f;
     text-align: center;
     color: white;

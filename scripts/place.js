@@ -1,16 +1,3 @@
-// Created the variable weather for insert the code html
-let weather = document.querySelector("#weather");
-weather.innerHTML = `
-    <h2 class="weather-title">Weather</h2>
-        <picture class="hero-2">
-            <source media="(max-width: 739px)" srcset="./images/place/clima.svg"/>
-            <img src="./images/place/clima.svg" alt="sun-and-cloud" width="100px" height="100px" class="image"/>
-        </picture>
-    <h3>Temperature: <span> 16°C </span></h3>
-    <h3>Conditions: <span> Partly Cloudy</span></h3>
-    <h3>Wind: <span> 5 km/h </span></h3>
-    <h3>Wind Chill: <span id="windChill"></span></h3>`;
-
 // This function could calculate the wind chill for °C   
     const calculateWindChill = (temperature, windSpeed) => {
         // Check if the conditions for calculating the thermal sensation are met

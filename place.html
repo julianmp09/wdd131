@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buenos Aires</title>
+    <title>Argentina</title>
     <meta name="description" content="creation of country page, WDD 131, Dynamic Web Fundamentals">
     <meta name="author" content="Julian Martinez">
     <link rel="shortcut icon" href="images/byu-idaho.png">
@@ -12,31 +12,31 @@
     <script defer src="./scripts/place.js"></script>
 </head>
 <body>
-    <div class="container-grid">
-        <h1>Argentina</h1>
-        <picture class="hero">
-            <source media="(max-width: 739px)" srcset="./images/place/obelisco-noche.webp" />
-            <source media="(min-width: 740px)" srcset="./images/place/obelisco_9_julio_horizontal.webp" />
-            <img src="./images/place/obelisco-noche.webp" alt="obelisco-noche" width="100%"/>
-          </picture>
-    </div>
-    <div class="container-info">
-        <section class="data">
-            <h2 class="data-title">Data</h2>
-            <h3>Area: <span>2,780,400 sq km</span></h3>
-            <h3>Population: <span>45,000,000</span></h3>
-            <h3>Capital: <span>Buenos Aires</span></h3>
-            <h3>Lenguages: <span>Spanish</span></h3>
-            <h3>Currency: <span>Argentiane Peso</span></h3>
-            <h3>Time Zone: <span>GMT-3</span></h3>
-            <h3>Calling Code: <span>+54</span></h3>
-            <h3>Internet TLD: <span>.ar</span></h3>
-      </section>
-      <section class="weather" id="weather"></section>
-    </div>
-      <footer>
-        <p>&copy;<span id="currentyear"></span> 😁 Julian Martinez 😁 Argentina.</p>
-        <p id="lastModified"></p>
-    </footer>
+            <div class="container-grid">
+                <h1>Argentina</h1>
+                <div class="hero-container">
+                    <picture class="hero">
+                        <source media="(max-width: 739px)" srcset="./images/place/obelisco-noche.webp" />
+                        <source media="(min-width: 740px)" srcset="./images/place/obelisco_9_julio_horizontal.webp" width="100%" height="100%" />
+                        <img src="./images/place/obelisco-noche.webp" alt="obelisco-noche" width="100%"/>
+                      </picture>
+                      <section class="data">
+                        <h2 class="data-title">Data</h2>
+                        <h3>Area: <span>2,780,400 sq km</span></h3>
+                        <h3>Population: <span>45,000,000</span></h3>
+                        <h3>Capital: <span>Buenos Aires</span></h3>
+                        <h3>Lenguages: <span>Spanish</span></h3>
+                        <h3>Currency: <span>Argentiane Peso</span></h3>
+                        <h3>Time Zone: <span>GMT-3</span></h3>
+                        <h3>Calling Code: <span>+54</span></h3>
+                        <h3>Internet TLD: <span>.ar</span></h3>
+                  </section>
+                  <section class="weather" id="weather"></section>
+                </div>
+            </div>
+            <footer>
+                <p>&copy;<span id="currentyear"></span> 😁 Julian Martinez 😁 Argentina.</p>
+                <p id="lastModified"></p>
+        </footer>
 </body>
 </html>

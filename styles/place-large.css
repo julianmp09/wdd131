@@ -28,6 +28,11 @@
         padding-left: 0.5rem;
         background-color: white;
         opacity: 0.8;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .data:hover{
+        transform: scale(1.1);
     }
 
     .data-title{
@@ -48,6 +53,11 @@
         padding-top: 4rem;
         background-color: white;
         opacity: 0.85;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .weather:hover{
+        transform: scale(1.1);
     }
 
     .weather-title{

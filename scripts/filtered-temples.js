@@ -111,16 +111,44 @@ const temples = [
 
 const displayTemples = (temples) =>{
     temples.forEach(temple => {
-        const figure = document.createElement("figure");
-        figure.innerHTML = `
-        <figcaption>
-            <h3>${temple.templeName}</h3>
-            <p>Location: ${temple.location}</p>
-            <p>Dedicated: ${temple.dedicated}</p>
-            <p>Size: ${temple.area} sq ft</p>
-        </figcaption>
-        <img src="${temple.imageUrl} " alt="${temple.templeName}" loading="lazy">`;
-        templesElement.appendChild(figure);
+        let figure = document.createElement("figure");
+        let figcaption = document.createElement("figcaption");
+        let name = document.createElement("h3");
+        let dedication = document.createElement("p");
+        dedication.classList.add("title-card");
+        let location = document.createElement("p");
+        location.classList.add("title-card");
+        let area = document.createElement("p");
+        location.classList.add("title-card");
+        let img = document.createElement("img");
+
+        name.textContent = temple.templeName;
+        location.innerHTML = `<span class="label">Location:</span> ${temple.location}`
+        dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`
+        area.innerHTML = `<span class="label">Size:</span> ${temple.area}`
+        img.setAttribute("src", temple.imageUrl);
+        img.setAttribute("alt", `${temple.templeName} Temple`);
+        img.setAttribute("loading", "lazy");
+        figure.appendChild(figcaption)
+        figcaption.appendChild(name)
+        figcaption.appendChild(location)
+        figcaption.appendChild(dedication)
+        figcaption.appendChild(area)
+        figcaption.appendChild(img)
+
+        document.querySelector(".figure-container").appendChild(figure);
+
+        // Another way of make the HTML with DOM
+        // const figure = document.createElement("figure");
+        // figure.innerHTML = `
+        // <figcaption>
+        //     <h3>${temple.templeName}</h3>
+        //     <p>Location: ${temple.location}</p>
+        //     <p>Dedicated: ${temple.dedicated}</p>
+        //     <p>Size: ${temple.area} sq ft</p>
+        // </figcaption>
+        // <img src="${temple.imageUrl} " alt="${temple.templeName}" loading="lazy">`;
+        // templesElement.appendChild(figure);
     })
 }
 
@@ -166,12 +194,6 @@ homeTemples.addEventListener("click", () => {
     document.querySelector(".figure-container").innerHTML = "";
     displayTemples(temples);
 })
-
-
-
-
-
-
 
 // Create the global variables
 const year = document.querySelector("#currentyear");

@@ -91,6 +91,11 @@ span{
     align-items: center;
 }
 
+.sun{
+    width: 100px;
+    height: 100px;
+}
+
 footer{
 	padding: 4rem;
     height: 200px;

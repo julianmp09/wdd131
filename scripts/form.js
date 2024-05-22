@@ -1,5 +1,5 @@
 //
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
     const products = [
         { id: "fc-1888", name: "flux capacitor", avg_rating: 4.5 },
         { id: "fc-2050", name: "power laces", avg_rating: 4.7 },

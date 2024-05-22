@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="creation of programming porfolio, WDD 131, Dynamic Web Fundamentals">
+    <meta name="author" content="Julian Martinez">
+    <link rel="shortcut icon" href="images/byu-idaho.png">
+    <link rel="stylesheet" href="styles/form.css">
+    <script  defer src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <div class="container">
+        <form action="review.html" method="get">
+            <!-- Product Name -->
+            <label for="product">Product Name:</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+                <!-- Options will be dynamically added here by JavaScript -->
+            </select>
+
+            <!-- Overall Rating -->
+            <label>Overall Rating</label>
+            <div class="rating">
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1">☆</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">☆☆</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">☆☆☆</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">☆☆☆☆</label>
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">☆☆☆☆☆</label>
+            </div>
+
+            <!-- Date of Installation -->
+            <label for="installation-date">Date of Installation:</label>
+            <input type="date" id="installation-date" name="installation-date" required>
+
+            <!-- Funciones útiles -->
+            <label>Which features did you find useful in the product?</label>
+            <div>
+                <input type="checkbox" id="feature1" name="features" value="Función 1">
+                <label for="feature1"> Durability</label><br>
+                <input type="checkbox" id="feature2" name="features" value="Función 2">
+                <label for="feature2"> Ease of Use</label><br>
+                <input type="checkbox" id="feature3" name="features" value="Función 3">
+                <label for="feature3">Peformance</label>
+                <input type="checkbox" id="feature3" name="features" value="Función 3">
+                <label for="feature3"> Desing</label>
+            </div>
+
+            <!-- Written Review -->
+            <label for="review">Written Review<span> (Optional)</span></label>
+            <textarea id="review" name="review" rows="4"></textarea>
+
+            <!-- Your Name -->
+            <label for="username">Your Name<span> (Optional)</span></label>
+            <input type="text" id="username" name="username">
+
+            <!-- Form Submit Button -->
+            <input type="submit" value="Post Review">
+        </form>
+    </div>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 😁 Julian Martinez 😁 Argentina.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

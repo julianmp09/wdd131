@@ -1,0 +1,88 @@
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        header {
+            background-color: #36454f;
+            display: grid;
+            grid-gap: 1rem;
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+
+        span{
+            color: blue;
+        }
+        body {
+            font-family: montserrat;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .rating {
+            display: flex;
+            justify-content: space-between;
+            width: 100px;
+        }
+        .rating label {
+            display: inline-block;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        footer{
+            padding: 1.5rem;
+            height: 150px;
+            background-color:  #36454f;
+            text-align: center;
+            color: white;
+            font-family: montserrat;
+            font-size: 1.3rem;
+        }
+
+        footer span{
+            color: white;
+        }

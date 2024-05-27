@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Shopping Cart | Moda en Casa</title>
+    <meta name="description" content="Buy of phone, tv, bed, headphones">
+    <meta name="author" content="Julian Martinez">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/moda-en-casa-small.css">
+    <script  defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="./scripts/shopping.cart.js"></script>
+    <script defer src="./scripts/menu.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header-mobile">
+            <h1 class="logo">Moda en Casa</h1>
+            <button class="open-menu" id="open-menu">☰</button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">X</button>
+            <header>
+                <h1 class="logo"> Moda en Casa</h1>
+            </header>    
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a class="button-menu boton-volver" href="./moda-en-casa-home.html"><i class="bi bi-arrow-return-left"></i>Keep Shopping</a>
+                    </li>
+
+                    <li>
+                        <a class="button-menu button-cart active" href="./carrito.html"><i class="bi bi-basket-fill"></i>Shopping cart</a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <a href="mailto:juliandaniel9809@gmail.com" class="mail"><i class="bi bi-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/julian-daniel-martinez-pe%C3%B1aloza-82b995163/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="principal-title">Shopping Cart</h2>
+            <div class="container-cart">
+                <p id="cart-empty" class="cart-empty">Your shopping cart is empty</p>
+
+                <div id="cart-products" class="cart-products disabled">
+                    <!-- This will be filled with JS --> 
+                </div>
+
+                <div id="cart-actions" class="cart-actions disabled">
+                    <div class="cart-actions-left">
+                        <button class="cart-actions-empty">Empty cart</button>
+                    </div>
+                    <div class="cart-actions-right">
+                        <div class="cart-actions-total">
+                            <p>Amount:</p>
+                            <p id="total"> $3000</p>
+                        </div>
+                        <button class="cart-actions-purchase">Buy now</button>
+                    </div>
+                </div>
+
+                <p id="cart-purchase" class="cart-purchase disabled">Thank so much for buy here.</p>
+        </main>
+    </div>
+</body>
+</html>

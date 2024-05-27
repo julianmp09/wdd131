@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        position: fixed;
+        z-index: 9;
+        background-color:  #183446;
+        left: 0;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.75);
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.2s;
+    }
+    
+    .aside-visible{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    main{
+        margin: 1rem;
+        margin-top: 0;
+    }
+    
+    .header-mobile{
+        display: flex;
+        padding: 1rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-mobile .logo{
+        color: white;
+    }
+
+    .open-menu, .close-menu{
+        background-color: transparent;
+        color: white;
+        border: 0;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    #close-menu{
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+    }
+
+
+    .button-menu.active::before,
+    .button-menu.active::after {
+        display: none;
+    }
+
+    .container-products{
+        grid-template-columns: 1fr 1fr;
+    }
+}
